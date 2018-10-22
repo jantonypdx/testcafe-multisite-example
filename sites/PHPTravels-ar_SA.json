@@ -1,0 +1,7 @@
+{
+  "name": "PHPTravels ar_SA",
+  "url": "https://www.phptravels.net/ar",
+  "navLinks": "li.go-right > a",
+  "hotelLinkText": "الفنادق",
+  "flightLinkText": "طيران"
+}

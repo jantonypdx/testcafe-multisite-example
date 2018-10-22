@@ -1,0 +1,7 @@
+{
+  "name": "PHPTravels en_US",
+  "url": "https://www.phptravels.net/en",
+  "navLinks": "li.go-right > a",
+  "hotelLinkText": "HOTELS",
+  "flightLinkText": "FLIGHTS"
+}
