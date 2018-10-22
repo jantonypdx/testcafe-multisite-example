@@ -34,13 +34,13 @@ const sites = [
 fixture(`Multi site test 2`);
 
 sites.forEach(site => {
-  test(`${site.name} - visit hotel page`, async t => {
+  test(`${site.name} - test hotel page`, async t => {
     // click the "Hotels" link in the nav menu
     const link = Selector(site.navLinks).withText(site.hotelLinkText);
     await t.navigateTo(site.url).click(link);
   });
 
-  test(`${site.name} - visit flight page`, async t => {
+  test(`${site.name} - test flight page`, async t => {
     // click the "Flights" link in the nav menu
     const link = Selector(site.navLinks).withText(site.flightLinkText);
     await t.navigateTo(site.url).click(link);

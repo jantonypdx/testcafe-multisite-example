@@ -9,13 +9,13 @@ const flightLinkText = "FLIGHTS";
 
 fixture(`Refactored single site test`).page(url);
 
-test(`${siteName} - visit hotel page`, async t => {
+test(`${siteName} - test hotel page`, async t => {
   // click the "Hotels" link in the nav menu
   const link = Selector(navLinks).withText(hotelLinkText);
   await t.click(link);
 });
 
-test(`${siteName} - visit flight page`, async t => {
+test(`${siteName} - test flight page`, async t => {
   // click the "Flights" link in the nav menu
   const link = Selector(navLinks).withText(flightLinkText);
   await t.click(link);
