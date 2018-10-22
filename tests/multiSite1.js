@@ -1,10 +1,10 @@
-import { Selector } from 'testcafe';
+import { Selector } from "testcafe";
 
-const siteName = 'PHPTravels en_US';
-const url = 'https://www.phptravels.net/en';
-const navLinks = 'li.go-right > a';
-const hotelLinkText = 'HOTELS';
-const flightLinkText = 'FLIGHTS';
+const siteName = "PHPTravels en_US";
+const url = "https://www.phptravels.net/en";
+const navLinks = "li.go-right > a";
+const hotelLinkText = "HOTELS";
+const flightLinkText = "FLIGHTS";
 
 // const siteName = 'PHPTravels fr_FR';
 // const url = 'https://www.phptravels.net/fr';
@@ -27,11 +27,13 @@ const flightLinkText = 'FLIGHTS';
 fixture(`Multi site test 1`).page(url);
 
 test(`${siteName} - visit hotel page`, async t => {
+  // click the "Hotels" link in the nav menu
   const link = Selector(navLinks).withText(hotelLinkText);
   await t.click(link);
 });
 
 test(`${siteName} - visit flight page`, async t => {
+  // click the "Flights" link in the nav menu
   const link = Selector(navLinks).withText(flightLinkText);
   await t.click(link);
 });
