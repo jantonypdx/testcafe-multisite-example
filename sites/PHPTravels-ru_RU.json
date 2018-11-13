@@ -2,6 +2,6 @@
   "name": "PHPTravels ru_RU",
   "url": "https://www.phptravels.net/ru",
   "navLinks": "li.go-right > a",
-  "hotelLinkText": "ОТЕЛИ",
-  "flightLinkText": "РЕЙСОВ"
+  "blogLinkText": "БЛОГ",
+  "offersLinkText": "OFFERS"
 }

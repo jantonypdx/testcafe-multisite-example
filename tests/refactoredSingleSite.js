@@ -4,19 +4,19 @@ import { Selector } from "testcafe";
 const siteName = "PHPTravels en_US";
 const url = "https://www.phptravels.net/en";
 const navLinks = "li.go-right > a";
-const hotelLinkText = "HOTELS";
-const flightLinkText = "FLIGHTS";
+const blogLinkText = "BLOG";
+const offersLinkText = "OFFERS";
 
 fixture(`Refactored single site test`).page(url);
 
-test(`${siteName} - test hotel page`, async t => {
-  // click the "Hotels" link in the nav menu
-  const link = Selector(navLinks).withText(hotelLinkText);
+test(`${siteName} - test '${blogLinkText}' page`, async t => {
+  // click the "Blog" link in the nav menu
+  const link = Selector(navLinks).withText(blogLinkText);
   await t.click(link);
 });
 
-test(`${siteName} - test flight page`, async t => {
-  // click the "Flights" link in the nav menu
-  const link = Selector(navLinks).withText(flightLinkText);
+test(`${siteName} - test '${offersLinkText}' page`, async t => {
+  // click the "Offers" link in the nav menu
+  const link = Selector(navLinks).withText(offersLinkText);
   await t.click(link);
 });

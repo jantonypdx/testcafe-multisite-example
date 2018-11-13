@@ -2,6 +2,6 @@
   "name": "PHPTravels fr_FR",
   "url": "https://www.phptravels.net/fr",
   "navLinks": "li.go-right > a",
-  "hotelLinkText": "HÔTELS",
-  "flightLinkText": "DES VOL"
+  "blogLinkText": "BLOG",
+  "offersLinkText": "DES OFFRES"
 }
