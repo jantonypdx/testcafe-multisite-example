@@ -1,9 +1,8 @@
 import { Selector } from "testcafe";
-import { getSites } from "../lib/getSitesStatic";
+import { getSites } from "../lib/getSitesDynamic";
 
 const sites = getSites();
-
-fixture(`Multi-site test 3`);
+fixture(`Multi-site test 4`);
 
 sites.forEach(site => {
   test(`${site.name} - test '${site.blogLinkText}' page`, async t => {
