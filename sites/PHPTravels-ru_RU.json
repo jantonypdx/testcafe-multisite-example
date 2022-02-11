@@ -1,7 +1,7 @@
 {
   "name": "PHPTravels ru_RU",
-  "url": "https://www.phptravels.net/ru",
-  "navLinks": "li.go-right > a",
-  "blogLinkText": "БЛОГ",
-  "offersLinkText": "OFFERS"
+  "url": "https://www.phptravels.net/lang-ru",
+  "navLinks": "div.main-menu-content li > a",
+  "blogLinkText": "Блог",
+  "offersLinkText": "Предложения"
 }

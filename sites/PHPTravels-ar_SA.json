@@ -1,7 +1,7 @@
 {
   "name": "PHPTravels ar_SA",
-  "url": "https://www.phptravels.net/ar",
-  "navLinks": "li.go-right > a",
-  "blogLinkText": "مقالات",
-  "offersLinkText": "عروض"
+  "url": "https://www.phptravels.net/lang-ar",
+  "navLinks": "div.main-menu-content li > a",
+  "blogLinkText": "مدونة",
+  "offersLinkText": "العروض"
 }

@@ -1,6 +1,13 @@
 import { Selector } from "testcafe";
 import { getSites } from "../lib/getSitesDynamic";
 
+// usage:
+// all sites:
+// npx testcafe -e chrome tests/multiSite4.js --site="**/*"
+//
+// only french site
+// npx testcafe -e chrome tests/multiSite4.js --site="**/*fr_FR*"
+
 const sites = getSites();
 fixture(`Multi-site test 4`);
 

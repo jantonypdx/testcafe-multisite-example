@@ -1,6 +1,9 @@
 import { Selector } from "testcafe";
 import { getSites } from "../lib/getSitesStatic";
 
+// usage:
+// npx testcafe -e chrome tests/multiSite3.js
+
 const sites = getSites();
 
 fixture(`Multi-site test 3`);

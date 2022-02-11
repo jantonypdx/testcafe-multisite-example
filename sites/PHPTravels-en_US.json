@@ -1,7 +1,7 @@
 {
   "name": "PHPTravels en_US",
-  "url": "https://www.phptravels.net/en",
-  "navLinks": "li.go-right > a",
-  "blogLinkText": "BLOG",
-  "offersLinkText": "OFFERS"
+  "url": "https://www.phptravels.net/lang-en",
+  "navLinks": "div.main-menu-content li > a",
+  "blogLinkText": "Blog",
+  "offersLinkText": "Offers"
 }

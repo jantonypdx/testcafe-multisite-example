@@ -1,22 +1,24 @@
 import { Selector } from "testcafe";
 
-// refactored so strings, urls, and selector strings are in constants
+// usage:
+// npx testcafe -e chrome tests/refactoredSingleSite.js
+
+const navLinks = new Selector("div.main-menu-content li > a");
+
+// refactored site strings, urls, and selector strings are in constants
 const siteName = "PHPTravels en_US";
-const url = "https://www.phptravels.net/en";
-const navLinks = "li.go-right > a";
-const blogLinkText = "BLOG";
-const offersLinkText = "OFFERS";
+const url = "https://www.phptravels.net/lang-en";
+const blogText = 'Blog';
+const offersText = 'Offers';
 
 fixture(`Refactored single site test`).page(url);
 
-test(`${siteName} - test '${blogLinkText}' page`, async t => {
+test(`${siteName} - test '${blogText}' page`, async t => {
   // click the "Blog" link in the nav menu
-  const link = Selector(navLinks).withText(blogLinkText);
-  await t.click(link);
+  await t.click(navLinks.withText(blogText));
 });
 
-test(`${siteName} - test '${offersLinkText}' page`, async t => {
+test(`${siteName} - test '${offersText}' page`, async t => {
   // click the "Offers" link in the nav menu
-  const link = Selector(navLinks).withText(offersLinkText);
-  await t.click(link);
+  await t.click(navLinks.withText(offersText));
 });
