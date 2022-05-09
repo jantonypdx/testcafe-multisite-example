@@ -2,8 +2,8 @@
 
 A TestCafe project showing how to write tests flexibly that can be run against multiple sites.
 
-Please see the related blog article for this project at:
-https://johnantony.com/testcafe-writing-flexible-tests-that-can-be-run-against-multiple-sites/
+Please see the related blog article for this project at:  
+[TestCafe – writing flexible tests that can be run against multiple sites](https://johnantony.com/testcafe-writing-flexible-tests-that-can-be-run-against-multiple-sites/)
 
 ## TestCafe example tests:
 
